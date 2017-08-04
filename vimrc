@@ -98,6 +98,9 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'ctrlpvim/ctrlp.vim'
 
+" comment lines
+Plug 'scrooloose/nerdcommenter'
+
 Plug 'vim-syntastic/syntastic'
 
 " comment lines
@@ -106,8 +109,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 
-Plug 'tomasr/molokai'
-Plug 'fmoralesc/molokayo'
+Plug 'tomasr/molokai' | Plug 'fmoralesc/molokayo'
 
 
 call plug#end()
