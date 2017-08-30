@@ -146,11 +146,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 #alias for grid_runner
 alias gr=grid_runner
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/iamkk/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/home/iamkk/google-cloud-sdk/completion.bash.inc'
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 alias config='/usr/bin/git --git-dir=/home/iamkk/.cfg/ --work-tree=/home/iamkk'
