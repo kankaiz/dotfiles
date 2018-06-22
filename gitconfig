@@ -1,7 +1,29 @@
 [core]
 	editor = vim
+	autocrlf = true
+	preloadindex = true
+	fscache = true
+	trustctime = false
 [user]
-	name = Kankai Zhang
-	email = zkk_zero@hotmail.com
+	name = Jeremy Zhang
+	email = zkk_zero@hotmail.com\
+[gc]
+	auto = 256
 [alias]
+	unstage = reset HEAD --
+	staged = diff --cached
+	last = log -1 HEAD
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	type = cat-file -t
+	dump = cat-file -p
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --date=short --decorate --all
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	wipe = "!git reset --hard;git clean -fd"
+	list-diff = diff-tree --no-commit-id --name-only -r
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
