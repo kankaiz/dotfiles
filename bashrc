@@ -140,14 +140,14 @@ function srv()
   eval $COMMAND
 }
 
-#load vitualwrapper commands
-export WORKON_HOME=$HOME/.virtualenvs
-#export PROJECT_HOME=$HOME/Devel
-export PROJECT_HOME=/mnt/work/Project/Broadsheet
-source /usr/local/bin/virtualenvwrapper.sh
+##load vitualwrapper commands
+#export WORKON_HOME=$HOME/.virtualenvs
+##export PROJECT_HOME=$HOME/Devel
+#export PROJECT_HOME=/mnt/work/Project/Broadsheet
+#source /usr/local/bin/virtualenvwrapper.sh
 
-#alias for grid_runner
-alias gr=grid_runner
+##alias for grid_runner
+#alias gr=grid_runner
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-alias config='/usr/bin/git --git-dir=/home/iamkk/.cfg/ --work-tree=/home/iamkk'
+#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+#alias config='/usr/bin/git --git-dir=/home/iamkk/.cfg/ --work-tree=/home/iamkk'
