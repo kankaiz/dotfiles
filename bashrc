@@ -140,11 +140,11 @@ function srv()
   eval $COMMAND
 }
 
-##load vitualwrapper commands
-#export WORKON_HOME=$HOME/.virtualenvs
+#load vitualwrapper commands
+export WORKON_HOME=$HOME/.virtualenvs
 ##export PROJECT_HOME=$HOME/Devel
 #export PROJECT_HOME=/mnt/work/Project/Broadsheet
-#source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
 
 ##alias for grid_runner
 #alias gr=grid_runner

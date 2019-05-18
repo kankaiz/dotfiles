@@ -50,14 +50,13 @@ else
 endif
 
 "Plugins
-let firstrun=0
-if !filereadable(expand("~/.vim/autoload/plug.vim"))
-
-    let firstrun=1
-    silent !mkdir -p ~/.vim/{autoload,undo,backups}
-    silent !curl -fLo ~/.vim/autoload/plug.vim
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+if !filereadable(expand('~/.vim/autoload/plug.vim'))
+	silent !mkdir -p ~/.vim/{autoload,undo,backups}
+	silent !curl -fLo ~/.vim/autoload/plug.vim
+	\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
+
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
@@ -66,7 +65,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 
 " Any valid git URL is allowed
-" Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
 " Multiple Plug commands can be written in a single line using | separators
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
@@ -111,11 +110,7 @@ Plug 'plasticboy/vim-markdown'
 
 Plug 'tomasr/molokai' | Plug 'fmoralesc/molokayo'
 
-
 call plug#end()
-if 1 == firstrun
-    :PlugInstall
-endif
 
 let g:ctrlp_show_hidden = 1
 
