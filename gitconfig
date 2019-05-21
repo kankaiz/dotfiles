@@ -1,6 +1,9 @@
 [core]
 	editor = vim
+	# Unix/Mac use input
 	autocrlf = input
+	# Windows use true
+	# autocrlf = true
 	preloadindex = true
 	fscache = true
 	trustctime = false
