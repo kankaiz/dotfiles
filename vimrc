@@ -122,4 +122,6 @@ nmap <silent> <F5> :setlocal spell! spelllang=en_us<CR>
 
 nmap <silent> <C-\> :NERDTreeToggle<CR>
 
+vnoremap <C-c> :w !pbcopy<CR><CR>
+noremap <C-v> :r !pbpaste<CR><CR>
 
