@@ -41,6 +41,7 @@ case "$TERM" in
 esac
 
 # Set CLICOLOR if you want Ansi Colors in iTerm2
+#echo -n $'Password:\n'
 export CLICOLOR=1
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -107,6 +108,8 @@ fi
 
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
 
 #runserver for python project
 function srv()
