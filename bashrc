@@ -132,6 +132,19 @@ function srv()
   eval $COMMAND
 }
 
+# Custimise terminal prompt
+function parse_git_branch {
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+cust_prompt() {
+	#export PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]\$(parse_git_branch)\[\033[00m\]\$ "
+	export PS1="\[\033[00m\][\t] \[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]\$(parse_git_branch)\[\033[00m\]\$ "
+}
+
+cust_prompt
+
+
 ##alias for grid_runner
 #alias gr=grid_runner
 
