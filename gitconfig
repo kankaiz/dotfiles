@@ -9,7 +9,7 @@
 	trustctime = false
 [user]
 	name = Jeremy Zhang
-	email = zkk_zero@hotmail.com\
+	email = zkk_zero@hotmail.com
 [gc]
 	auto = 256
 [alias]
